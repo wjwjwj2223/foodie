@@ -2,9 +2,11 @@ package com.imooc.pojo;
 
 import javax.persistence.Column;
 import javax.persistence.Id;
+import javax.persistence.Table;
 import java.util.Date;
 
-public class Usr {
+@Table(name = "usr")
+public class User {
     /**
      * 主键id 用户id
      */
