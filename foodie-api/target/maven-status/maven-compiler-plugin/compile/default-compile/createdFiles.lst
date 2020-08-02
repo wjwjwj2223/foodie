@@ -1,1 +1,2 @@
 com/imooc/controller/PassportController.class
+com/imooc/aspect/ServiceLogAspect.class
