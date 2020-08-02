@@ -1,2 +1,0 @@
-2020-08-02 19:38:05 INFO  ServiceLogAspect:43 - ====== 开始执行 class com.imooc.service.impl.UserServiceImpl.queryUsernameIsExist ======
-2020-08-02 19:38:05 INFO  ServiceLogAspect:62 - ====== 执行结束，耗时：6 毫秒 ======
