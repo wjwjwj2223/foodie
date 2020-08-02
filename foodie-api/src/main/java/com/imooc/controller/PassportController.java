@@ -1,13 +1,20 @@
 package com.imooc.controller;
 
+import com.imooc.pojo.User;
 import com.imooc.pojo.bo.UserBO;
 import com.imooc.service.UserService;
+import com.imooc.utils.CookieUtils;
 import com.imooc.utils.IMOOCJSONResult;
+import com.imooc.utils.JsonUtils;
+import com.imooc.utils.MD5Utils;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 
 @Api(value = "登录注册", tags = {"用于登录注册的相关接口"})
 @RestController
@@ -62,6 +69,38 @@ public class PassportController {
         //4 注册
         userService.createUser(userBO);
         return IMOOCJSONResult.ok();
+    }
+
+
+    @ApiOperation(value = "用户登录", notes = "用户登录", httpMethod = "POST")
+    @PostMapping("/login")
+    public IMOOCJSONResult login(@RequestBody UserBO userBO, HttpServletRequest request, HttpServletResponse response) throws Exception {
+
+        String username = userBO.getUsername();
+        String password = userBO.getPassword();
+        //0 判断用户名和密码不能为空
+        if (StringUtils.isBlank(username)
+                || StringUtils.isBlank(password)) {
+            return IMOOCJSONResult.errorMsg("用户名或者密码不能为空");
+        }
+        //1 实现登录
+        User user = userService.queryUserForLogin(username, MD5Utils.getMD5Str(password));
+        if (user == null) {
+            return IMOOCJSONResult.errorMsg("用户名或者密码不正确");
+        }
+        User userResult = setNullProperty(user);
+        CookieUtils.setCookie(request, response,"user", JsonUtils.objectToJson(userResult), true);
+
+        return IMOOCJSONResult.ok();
+    }
+
+    private User setNullProperty(User user) {
+        user.setPassword(null);
+        user.setRealname(null);
+        user.setCreatedTime(null);
+        user.setUpdatedTime(null);
+        user.setEmail(null);
+        return user;
     }
 
 }
