@@ -1,2 +1,3 @@
 com/imooc/utils/JsonUtils.class
 com/imooc/utils/CookieUtils.class
+com/imooc/enums/YesOrNo.class

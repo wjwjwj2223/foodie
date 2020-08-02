@@ -1,1 +1,3 @@
 com/imooc/service/impl/UserServiceImpl.class
+com/imooc/service/impl/CarouselServiceImpl.class
+com/imooc/service/CarouselService.class
