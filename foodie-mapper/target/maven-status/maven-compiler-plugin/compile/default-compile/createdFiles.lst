@@ -9,4 +9,4 @@ com/imooc/mapper/CarouselMapper.class
 com/imooc/mapper/ItemsMapper.class
 com/imooc/mapper/ItemsImgMapper.class
 com/imooc/mapper/OrderItemsMapper.class
-com/imooc/mapper/CategoryMapper.class
+com/imooc/mapper/CategorysMapper.class
