@@ -5,6 +5,7 @@ com/imooc/mapper/ItemsSpecMapper.class
 com/imooc/mapper/ItemsCommentsMapper.class
 com/imooc/mapper/ItemsParamMapper.class
 com/imooc/mapper/OrdersMapper.class
+com/imooc/mapper/ItemsMapperCustom.class
 com/imooc/mapper/CarouselMapper.class
 com/imooc/mapper/ItemsMapper.class
 com/imooc/mapper/ItemsImgMapper.class

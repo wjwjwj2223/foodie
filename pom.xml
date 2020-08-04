@@ -79,6 +79,12 @@
             <artifactId>mapper-spring-boot-starter</artifactId>
             <version>1.2.4</version>
         </dependency>
+        <!--        pegeHelper-->
+        <dependency>
+            <groupId>com.github.pagehelper</groupId>
+            <artifactId>pagehelper-spring-boot-starter</artifactId>
+            <version>1.2.3</version>
+        </dependency>
         <!--apache 工具类-->
         <dependency>
             <groupId>commons-codec</groupId>
