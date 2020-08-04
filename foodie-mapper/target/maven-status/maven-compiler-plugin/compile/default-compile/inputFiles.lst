@@ -1,12 +1,13 @@
 /Users/wangjie/Desktop/Study/Java/imooc/foodie/foodie-mapper/src/main/java/com/imooc/mapper/OrderItemsMapper.java
-/Users/wangjie/Desktop/Study/Java/imooc/foodie/foodie-mapper/src/main/java/com/imooc/mapper/CategoryMapper.java
 /Users/wangjie/Desktop/Study/Java/imooc/foodie/foodie-mapper/src/main/java/com/imooc/mapper/StuMapper.java
+/Users/wangjie/Desktop/Study/Java/imooc/foodie/foodie-mapper/src/main/java/com/imooc/mapper/CategorysMapper.java
 /Users/wangjie/Desktop/Study/Java/imooc/foodie/foodie-mapper/src/main/java/com/imooc/mapper/UserAddressMapper.java
 /Users/wangjie/Desktop/Study/Java/imooc/foodie/foodie-mapper/src/main/java/com/imooc/my/mapper/MyMapper.java
 /Users/wangjie/Desktop/Study/Java/imooc/foodie/foodie-mapper/src/main/java/com/imooc/mapper/CarouselMapper.java
 /Users/wangjie/Desktop/Study/Java/imooc/foodie/foodie-mapper/src/main/java/com/imooc/mapper/ItemsMapper.java
 /Users/wangjie/Desktop/Study/Java/imooc/foodie/foodie-mapper/src/main/java/com/imooc/mapper/OrderStatusMapper.java
 /Users/wangjie/Desktop/Study/Java/imooc/foodie/foodie-mapper/src/main/java/com/imooc/mapper/ItemsParamMapper.java
+/Users/wangjie/Desktop/Study/Java/imooc/foodie/foodie-mapper/src/main/java/com/imooc/mapper/CategorysMapperCustom.java
 /Users/wangjie/Desktop/Study/Java/imooc/foodie/foodie-mapper/src/main/java/com/imooc/mapper/ItemsCommentsMapper.java
 /Users/wangjie/Desktop/Study/Java/imooc/foodie/foodie-mapper/src/main/java/com/imooc/mapper/ItemsImgMapper.java
 /Users/wangjie/Desktop/Study/Java/imooc/foodie/foodie-mapper/src/main/java/com/imooc/mapper/ItemsSpecMapper.java
