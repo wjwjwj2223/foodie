@@ -24,5 +24,6 @@
 /Users/wangjie/Desktop/Study/Java/imooc/foodie/foodie-common/src/main/java/org/n3r/idworker/WorkerIdStrategy.java
 /Users/wangjie/Desktop/Study/Java/imooc/foodie/foodie-common/src/main/java/org/n3r/idworker/strategy/DefaultRandomCodeStrategy.java
 /Users/wangjie/Desktop/Study/Java/imooc/foodie/foodie-common/src/main/java/com/imooc/utils/MD5Utils.java
+/Users/wangjie/Desktop/Study/Java/imooc/foodie/foodie-common/src/main/java/com/imooc/utils/DesensitizationUtil.java
 /Users/wangjie/Desktop/Study/Java/imooc/foodie/foodie-common/src/main/java/org/n3r/idworker/InvalidSystemClock.java
 /Users/wangjie/Desktop/Study/Java/imooc/foodie/foodie-common/src/main/java/org/n3r/idworker/Test.java
