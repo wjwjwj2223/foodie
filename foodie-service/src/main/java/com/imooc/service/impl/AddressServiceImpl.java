@@ -33,6 +33,7 @@ public class AddressServiceImpl implements AddressService {
         return userAddressMapper.select(ua);
     }
 
+    @Transactional(propagation = Propagation.REQUIRED)
     @Override
     public void addNewUserAddress(AddressBO addressBO) {
         // 1. 判断当前用户是否存在地址，如果没有，则新增为‘默认地址’
@@ -54,5 +55,16 @@ public class AddressServiceImpl implements AddressService {
         newAddress.setUpdatedTime(new Date());
 
         userAddressMapper.insert(newAddress);
+    }
+
+    @Transactional(propagation = Propagation.REQUIRED)
+    @Override
+    public void updateUserAddress(AddressBO addressBO) {
+        String addressId = addressBO.getAddressId();
+        UserAddress pendingAddress = new UserAddress();
+        BeanUtils.copyProperties(addressBO, pendingAddress);
+        pendingAddress.setId(addressId);
+        pendingAddress.setUpdatedTime(new Date());
+        userAddressMapper.updateByPrimaryKeySelective(pendingAddress);
     }
 }

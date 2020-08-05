@@ -18,5 +18,11 @@ public interface AddressService {
      * 用户新增地址
      * @param addressBO
      */
-    public void addNewUserAddress(AddressBO addressBO);
+    void addNewUserAddress(AddressBO addressBO);
+
+    /**
+     * 用户修改地址
+     * @param addressBO
+     */
+    void updateUserAddress(AddressBO addressBO);
 }
