@@ -1,5 +1,6 @@
 com/imooc/pojo/vo/SearchItemsVO.class
 com/imooc/pojo/ItemsComments.class
+com/imooc/pojo/bo/AddressBO.class
 com/imooc/pojo/Orders.class
 com/imooc/pojo/vo/ShopcartVO.class
 com/imooc/pojo/UserAddress.class
