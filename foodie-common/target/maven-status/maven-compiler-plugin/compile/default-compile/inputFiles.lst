@@ -4,6 +4,7 @@
 /Users/wangjie/Desktop/Study/Java/imooc/foodie/foodie-common/src/main/java/com/imooc/enums/CommentLevel.java
 /Users/wangjie/Desktop/Study/Java/imooc/foodie/foodie-common/src/main/java/org/n3r/idworker/IdWorker.java
 /Users/wangjie/Desktop/Study/Java/imooc/foodie/foodie-common/src/main/java/com/imooc/enums/YesOrNo.java
+/Users/wangjie/Desktop/Study/Java/imooc/foodie/foodie-common/src/main/java/com/imooc/enums/OrderStatusEnum.java
 /Users/wangjie/Desktop/Study/Java/imooc/foodie/foodie-common/src/main/java/com/imooc/enums/Sex.java
 /Users/wangjie/Desktop/Study/Java/imooc/foodie/foodie-common/src/main/java/org/n3r/idworker/strategy/DefaultWorkerIdStrategy.java
 /Users/wangjie/Desktop/Study/Java/imooc/foodie/foodie-common/src/main/java/com/imooc/utils/PagedGridResult.java
@@ -12,6 +13,7 @@
 /Users/wangjie/Desktop/Study/Java/imooc/foodie/foodie-common/src/main/java/org/n3r/idworker/utils/HttpReq.java
 /Users/wangjie/Desktop/Study/Java/imooc/foodie/foodie-common/src/main/java/com/imooc/utils/DateUtil.java
 /Users/wangjie/Desktop/Study/Java/imooc/foodie/foodie-common/src/main/java/org/n3r/idworker/utils/Serializes.java
+/Users/wangjie/Desktop/Study/Java/imooc/foodie/foodie-common/src/main/java/com/imooc/enums/PayMethod.java
 /Users/wangjie/Desktop/Study/Java/imooc/foodie/foodie-common/src/main/java/org/n3r/idworker/strategy/FileLock.java
 /Users/wangjie/Desktop/Study/Java/imooc/foodie/foodie-common/src/main/java/com/imooc/utils/JsonUtils.java
 /Users/wangjie/Desktop/Study/Java/imooc/foodie/foodie-common/src/main/java/org/n3r/idworker/Id.java

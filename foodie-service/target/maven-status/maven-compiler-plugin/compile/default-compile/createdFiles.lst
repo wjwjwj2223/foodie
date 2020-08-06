@@ -1,7 +1,9 @@
 com/imooc/service/CategorysService.class
 com/imooc/service/impl/CarouselServiceImpl.class
+com/imooc/service/OrderService.class
 com/imooc/service/ItemService.class
 com/imooc/service/impl/AddressServiceImpl.class
+com/imooc/service/impl/OrderServiceImpl.class
 com/imooc/service/impl/UserServiceImpl.class
 com/imooc/service/impl/CategorysServiceImpl.class
 com/imooc/service/CarouselService.class

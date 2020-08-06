@@ -1,5 +1,7 @@
 com/imooc/pojo/vo/SearchItemsVO.class
 com/imooc/pojo/ItemsComments.class
+com/imooc/pojo/vo/OrderVO.class
+com/imooc/pojo/vo/MerchantOrdersVO.class
 com/imooc/pojo/bo/AddressBO.class
 com/imooc/pojo/Orders.class
 com/imooc/pojo/vo/ShopcartVO.class
@@ -12,6 +14,7 @@ com/imooc/pojo/ItemsSpec.class
 com/imooc/pojo/OrderStatus.class
 com/imooc/pojo/vo/ItemCommentVO.class
 com/imooc/pojo/vo/SimpleItemVO.class
+com/imooc/pojo/bo/SubmitOrderBO.class
 com/imooc/pojo/bo/ShopcartBO.class
 com/imooc/pojo/Carousel.class
 com/imooc/pojo/vo/NewItemsVO.class

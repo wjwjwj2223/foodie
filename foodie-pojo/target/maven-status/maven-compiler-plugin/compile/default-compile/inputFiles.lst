@@ -1,6 +1,8 @@
 /Users/wangjie/Desktop/Study/Java/imooc/foodie/foodie-pojo/src/main/java/com/imooc/pojo/OrderItems.java
 /Users/wangjie/Desktop/Study/Java/imooc/foodie/foodie-pojo/src/main/java/com/imooc/pojo/vo/SimpleItemVO.java
+/Users/wangjie/Desktop/Study/Java/imooc/foodie/foodie-pojo/src/main/java/com/imooc/pojo/vo/OrderVO.java
 /Users/wangjie/Desktop/Study/Java/imooc/foodie/foodie-pojo/src/main/java/com/imooc/pojo/OrderStatus.java
+/Users/wangjie/Desktop/Study/Java/imooc/foodie/foodie-pojo/src/main/java/com/imooc/pojo/bo/SubmitOrderBO.java
 /Users/wangjie/Desktop/Study/Java/imooc/foodie/foodie-pojo/src/main/java/com/imooc/pojo/vo/CategoryVO.java
 /Users/wangjie/Desktop/Study/Java/imooc/foodie/foodie-pojo/src/main/java/com/imooc/pojo/ItemsParam.java
 /Users/wangjie/Desktop/Study/Java/imooc/foodie/foodie-pojo/src/main/java/com/imooc/pojo/User.java
@@ -11,6 +13,7 @@
 /Users/wangjie/Desktop/Study/Java/imooc/foodie/foodie-pojo/src/main/java/com/imooc/pojo/Carousel.java
 /Users/wangjie/Desktop/Study/Java/imooc/foodie/foodie-pojo/src/main/java/com/imooc/pojo/ItemsImg.java
 /Users/wangjie/Desktop/Study/Java/imooc/foodie/foodie-pojo/src/main/java/com/imooc/pojo/bo/AddressBO.java
+/Users/wangjie/Desktop/Study/Java/imooc/foodie/foodie-pojo/src/main/java/com/imooc/pojo/vo/MerchantOrdersVO.java
 /Users/wangjie/Desktop/Study/Java/imooc/foodie/foodie-pojo/src/main/java/com/imooc/pojo/Categorys.java
 /Users/wangjie/Desktop/Study/Java/imooc/foodie/foodie-pojo/src/main/java/com/imooc/pojo/Items.java
 /Users/wangjie/Desktop/Study/Java/imooc/foodie/foodie-pojo/src/main/java/com/imooc/pojo/vo/SearchItemsVO.java
