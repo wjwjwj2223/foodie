@@ -25,16 +25,9 @@ import javax.servlet.http.HttpServletResponse;
 @Api(value = "订单相关", tags = {"订单相关的api接口"})
 @RequestMapping("orders")
 @RestController
-public class OrdersController {
+public class OrdersController extends BaseController {
 
     final static Logger logger = LoggerFactory.getLogger(OrdersController.class);
-
-    // 支付中心的调用地址
-    String paymentUrl = "http://payment.t.mukewang.com/foodie-payment/payment/createMerchantOrder";		// produce
-
-    // 微信支付成功 -> 支付中心 -> 天天吃货平台
-    //                       |-> 回调通知的url
-    String payReturnUrl = "http://api.z.mukewang.com/foodie-dev-api/orders/notifyMerchantOrderPaid";
 
     @Autowired
     private OrderService orderService;

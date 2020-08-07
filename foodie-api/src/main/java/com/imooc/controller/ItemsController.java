@@ -4,7 +4,6 @@ import com.imooc.pojo.Items;
 import com.imooc.pojo.ItemsImg;
 import com.imooc.pojo.ItemsParam;
 import com.imooc.pojo.ItemsSpec;
-import com.imooc.pojo.vo.CategoryVO;
 import com.imooc.pojo.vo.CommentLevelCountsVO;
 import com.imooc.pojo.vo.ItemInfoVO;
 import com.imooc.pojo.vo.ShopcartVO;
@@ -23,10 +22,7 @@ import java.util.List;
 @Api(value = "商品接口", tags = {"商品信息展示的相关接口"})
 @RestController
 @RequestMapping("items")
-public class ItemsController {
-
-    public static final Integer COMMON_PAGE_SIZE = 10;
-    public static final Integer PAGE_SIZE = 20;
+public class ItemsController extends BaseController {
 
     @Autowired
     private ItemService itemService;
