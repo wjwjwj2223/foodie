@@ -16,4 +16,10 @@ public interface OrderService {
      * @param orderStatus
      */
     void updateOrderStatus(String orderId, Integer orderStatus);
+
+
+    /**
+     * 关闭超时未支付订单
+     */
+    public void closeOrder();
 }
