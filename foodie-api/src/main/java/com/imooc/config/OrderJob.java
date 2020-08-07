@@ -26,7 +26,9 @@ public class OrderJob {
      *      10:12分下单的，未付款（10）状态，11:12分检查，如果当前状态还是10，则直接关闭订单即可
      */
 
+    //每三分钟执行一次
 //    @Scheduled(cron = "0/3 * * * * ?")
+    //每个小时执行一次
 //    @Scheduled(cron = "0 0 0/1 * * ?")
     public void autoCloseOrder() {
         orderService.closeOrder();
