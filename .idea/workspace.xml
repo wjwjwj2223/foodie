@@ -2,13 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a14b7fe4-6c89-4cec-8694-9102118dff6d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/foodie-api/src/main/java/com/imooc/controller/center/CenterController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-service/src/main/java/com/imooc/service/center/CenterUserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodie-service/src/main/java/com/imooc/service/impl/center/CenterUserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_validation_jakarta_validation_api_2_0_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_validator_hibernate_validator_6_1_5_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_4_1_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodie-pojo/src/main/java/com/imooc/pojo/bo/center/CenterUserBO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/foodie.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/foodie.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/foodie-api/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/foodie-api/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/foodie-pojo/src/main/java/com/imooc/pojo/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/foodie-pojo/src/main/java/com/imooc/pojo/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/foodie-service/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/foodie-service/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foodie-api/foodie-api.iml" beforeDir="false" afterPath="$PROJECT_DIR$/foodie-api/foodie-api.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foodie-api/src/main/java/com/imooc/controller/center/CenterUserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/foodie-api/src/main/java/com/imooc/controller/center/CenterUserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foodie-common/foodie-common.iml" beforeDir="false" afterPath="$PROJECT_DIR$/foodie-common/foodie-common.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foodie-mapper/foodie-mapper.iml" beforeDir="false" afterPath="$PROJECT_DIR$/foodie-mapper/foodie-mapper.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foodie-pojo/foodie-pojo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/foodie-pojo/foodie-pojo.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foodie-service/foodie-service.iml" beforeDir="false" afterPath="$PROJECT_DIR$/foodie-service/foodie-service.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foodie-service/src/main/java/com/imooc/service/center/CenterUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/foodie-service/src/main/java/com/imooc/service/center/CenterUserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foodie-service/src/main/java/com/imooc/service/impl/center/CenterUserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/foodie-service/src/main/java/com/imooc/service/impl/center/CenterUserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,8 +81,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.imooc.service.impl.center" />
       <recent name="com.imooc.pojo.bo.center" />
+      <recent name="com.imooc.service.impl.center" />
       <recent name="com.imooc.service.center" />
       <recent name="com.imooc.controller.center" />
       <recent name="com.imooc.utils" />
@@ -161,7 +169,7 @@
       <workItem from="1596774071007" duration="9000" />
       <workItem from="1596774092972" duration="804000" />
       <workItem from="1596784670984" duration="6624000" />
-      <workItem from="1597915157414" duration="583000" />
+      <workItem from="1597915157414" duration="3762000" />
     </task>
     <servers />
   </component>
@@ -192,10 +200,10 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="516" y="305" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1680.1050@0.0.1680.1050" timestamp="1596353056510" />
-    <state x="640" y="209" key="#com.intellij.ide.util.MemberChooser" timestamp="1596687457723">
+    <state x="640" y="209" key="#com.intellij.ide.util.MemberChooser" timestamp="1597916586305">
       <screen x="0" y="23" width="1680" height="947" />
     </state>
-    <state x="640" y="209" key="#com.intellij.ide.util.MemberChooser/-2560.23.2560.1417/0.23.1680.947@0.23.1680.947" timestamp="1596687457723" />
+    <state x="640" y="209" key="#com.intellij.ide.util.MemberChooser/-2560.23.2560.1417/0.23.1680.947@0.23.1680.947" timestamp="1597916586305" />
     <state x="640" y="206" key="#com.intellij.ide.util.MemberChooser/0.0.1680.1050@0.0.1680.1050" timestamp="1596385593065" />
     <state x="640" y="209" key="#com.intellij.ide.util.MemberChooser/0.23.1680.947@0.23.1680.947" timestamp="1596648554242" />
     <state x="465" y="192" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1596689431095">
@@ -280,10 +288,10 @@
       <screen x="0" y="23" width="1680" height="947" />
     </state>
     <state width="1553" height="619" key="GridCell.Tab.2.right/0.23.1680.947@0.23.1680.947" timestamp="1596127681009" />
-    <state x="415" y="238" key="IDE.errors.dialog" timestamp="1596422327861">
+    <state x="415" y="238" key="IDE.errors.dialog" timestamp="1597918390088">
       <screen x="0" y="23" width="1680" height="947" />
     </state>
-    <state x="415" y="238" key="IDE.errors.dialog/-2560.23.2560.1417/0.23.1680.947@0.23.1680.947" timestamp="1596422327861" />
+    <state x="415" y="238" key="IDE.errors.dialog/-2560.23.2560.1417/0.23.1680.947@0.23.1680.947" timestamp="1597918390088" />
     <state x="415" y="238" key="IDE.errors.dialog/0.23.1680.947@0.23.1680.947" timestamp="1595956861251" />
     <state x="0" y="178" width="1680" height="587" key="NewModule_or_Project.wizard" timestamp="1596690080458">
       <screen x="0" y="23" width="1680" height="947" />
