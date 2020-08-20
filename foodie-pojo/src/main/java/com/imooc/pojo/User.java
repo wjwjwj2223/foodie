@@ -5,7 +5,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 import java.util.Date;
 
-@Table(name = "usr")
+@Table(name = "users")
 public class User {
     /**
      * 主键id 用户id
