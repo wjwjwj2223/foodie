@@ -9,3 +9,4 @@ com/imooc/controller/IndexController.class
 com/imooc/config/OrderJob.class
 com/imooc/controller/BaseController.class
 com/imooc/config/WebMvcConfig.class
+com/imooc/exception/CustomExceptionHandler.class
