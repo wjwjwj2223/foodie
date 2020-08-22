@@ -1,6 +1,7 @@
 com/imooc/service/CategorysService.class
 com/imooc/service/impl/CarouselServiceImpl.class
 com/imooc/service/OrderService.class
+com/imooc/service/impl/center/BaseService.class
 com/imooc/service/ItemService.class
 com/imooc/service/impl/center/CenterUserServiceImpl.class
 com/imooc/service/impl/AddressServiceImpl.class
@@ -9,5 +10,7 @@ com/imooc/service/impl/UserServiceImpl.class
 com/imooc/service/impl/CategorysServiceImpl.class
 com/imooc/service/CarouselService.class
 com/imooc/service/AddressService.class
+com/imooc/service/impl/center/MyOrdersServiceImpl.class
 com/imooc/service/center/CenterUserService.class
+com/imooc/service/center/MyOrdersService.class
 com/imooc/service/impl/ItemServiceImpl.class
