@@ -26,7 +26,7 @@ public class MyOrdersController extends BaseController {
     @PostMapping("/statusCounts")
     public IMOOCJSONResult statusCounts(
             @ApiParam(name = "userId", value = "用户id", required = true)
-            @RequestBody String userId) {
+            @RequestParam String userId) {
 
         if (StringUtils.isBlank(userId)) {
             return IMOOCJSONResult.errorMsg(null);
