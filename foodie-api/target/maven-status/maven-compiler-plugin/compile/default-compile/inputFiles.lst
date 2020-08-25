@@ -1,3 +1,4 @@
+/Users/wangjie/Desktop/Study/Java/imooc/foodie/foodie-api/src/main/java/com/imooc/controller/center/MyOrdersController.java
 /Users/wangjie/Desktop/Study/Java/imooc/foodie/foodie-api/src/main/java/com/imooc/controller/IndexController.java
 /Users/wangjie/Desktop/Study/Java/imooc/foodie/foodie-api/src/main/java/com/imooc/resource/FileUpload.java
 /Users/wangjie/Desktop/Study/Java/imooc/foodie/foodie-api/src/main/java/com/imooc/controller/center/CenterController.java
@@ -7,6 +8,7 @@
 /Users/wangjie/Desktop/Study/Java/imooc/foodie/foodie-api/src/main/java/com/imooc/controller/AddressController.java
 /Users/wangjie/Desktop/Study/Java/imooc/foodie/foodie-api/src/main/java/com/imooc/controller/StuFooController.java
 /Users/wangjie/Desktop/Study/Java/imooc/foodie/foodie-api/src/main/java/com/imooc/config/WebMvcConfig.java
+/Users/wangjie/Desktop/Study/Java/imooc/foodie/foodie-api/src/main/java/com/imooc/controller/center/MyCommentsController.java
 /Users/wangjie/Desktop/Study/Java/imooc/foodie/foodie-api/src/main/java/com/imooc/exception/CustomExceptionHandler.java
 /Users/wangjie/Desktop/Study/Java/imooc/foodie/foodie-api/src/main/java/com/imooc/controller/center/CenterUserController.java
 /Users/wangjie/Desktop/Study/Java/imooc/foodie/foodie-api/src/main/java/com/imooc/config/CorsConfig.java
@@ -16,4 +18,5 @@
 /Users/wangjie/Desktop/Study/Java/imooc/foodie/foodie-api/src/main/java/com/imooc/controller/BaseController.java
 /Users/wangjie/Desktop/Study/Java/imooc/foodie/foodie-api/src/main/java/com/imooc/controller/ItemsController.java
 /Users/wangjie/Desktop/Study/Java/imooc/foodie/foodie-api/src/main/java/com/imooc/aspect/ServiceLogAspect.java
+/Users/wangjie/Desktop/Study/Java/imooc/foodie/foodie-api/src/main/java/com/imooc/WarStarterApplication.java
 /Users/wangjie/Desktop/Study/Java/imooc/foodie/foodie-api/src/main/java/com/imooc/config/OrderJob.java

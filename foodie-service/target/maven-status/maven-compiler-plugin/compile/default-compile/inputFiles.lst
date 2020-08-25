@@ -1,11 +1,16 @@
 /Users/wangjie/Desktop/Study/Java/imooc/foodie/foodie-service/src/main/java/com/imooc/service/impl/center/CenterUserServiceImpl.java
 /Users/wangjie/Desktop/Study/Java/imooc/foodie/foodie-service/src/main/java/com/imooc/service/CarouselService.java
 /Users/wangjie/Desktop/Study/Java/imooc/foodie/foodie-service/src/main/java/com/imooc/service/TestTransService.java
+/Users/wangjie/Desktop/Study/Java/imooc/foodie/foodie-service/src/main/java/com/imooc/service/impl/center/BaseService.java
 /Users/wangjie/Desktop/Study/Java/imooc/foodie/foodie-service/src/main/java/com/imooc/service/AddressService.java
+/Users/wangjie/Desktop/Study/Java/imooc/foodie/foodie-service/src/main/java/com/imooc/service/impl/center/MyCommentsServiceImpl.java
+/Users/wangjie/Desktop/Study/Java/imooc/foodie/foodie-service/src/main/java/com/imooc/service/impl/center/MyOrdersServiceImpl.java
 /Users/wangjie/Desktop/Study/Java/imooc/foodie/foodie-service/src/main/java/com/imooc/service/impl/AddressServiceImpl.java
 /Users/wangjie/Desktop/Study/Java/imooc/foodie/foodie-service/src/main/java/com/imooc/service/OrderService.java
+/Users/wangjie/Desktop/Study/Java/imooc/foodie/foodie-service/src/main/java/com/imooc/service/center/MyOrdersService.java
 /Users/wangjie/Desktop/Study/Java/imooc/foodie/foodie-service/src/main/java/com/imooc/service/impl/TestTransServiceImpl.java
 /Users/wangjie/Desktop/Study/Java/imooc/foodie/foodie-service/src/main/java/com/imooc/service/center/CenterUserService.java
+/Users/wangjie/Desktop/Study/Java/imooc/foodie/foodie-service/src/main/java/com/imooc/service/center/MyCommentsService.java
 /Users/wangjie/Desktop/Study/Java/imooc/foodie/foodie-service/src/main/java/com/imooc/service/impl/ItemServiceImpl.java
 /Users/wangjie/Desktop/Study/Java/imooc/foodie/foodie-service/src/main/java/com/imooc/service/impl/OrderServiceImpl.java
 /Users/wangjie/Desktop/Study/Java/imooc/foodie/foodie-service/src/main/java/com/imooc/service/impl/StuServiceImpl.java
