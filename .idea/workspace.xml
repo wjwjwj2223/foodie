@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a14b7fe4-6c89-4cec-8694-9102118dff6d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/foodie-common/src/main/java/com/imooc/utils/RedisOperator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foodie-api/src/main/java/com/imooc/controller/IndexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/foodie-api/src/main/java/com/imooc/controller/IndexController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -160,7 +160,7 @@
       <workItem from="1598279910291" duration="4246000" />
       <workItem from="1598288036591" duration="3972000" />
       <workItem from="1598534903460" duration="8000" />
-      <workItem from="1598945432665" duration="2780000" />
+      <workItem from="1598945432665" duration="3382000" />
     </task>
     <servers />
   </component>
@@ -306,10 +306,10 @@
     </state>
     <state x="195" y="159" key="new project wizard/-2560.23.2560.1417/0.23.1680.947@0.23.1680.947" timestamp="1596689652305" />
     <state x="195" y="159" key="new project wizard/0.23.1680.947@0.23.1680.947" timestamp="1595948629197" />
-    <state x="526" y="230" width="670" height="676" key="search.everywhere.popup" timestamp="1598946041230">
+    <state x="526" y="230" width="670" height="676" key="search.everywhere.popup" timestamp="1598951382693">
       <screen x="0" y="23" width="1680" height="947" />
     </state>
-    <state x="526" y="230" width="670" height="676" key="search.everywhere.popup/-2560.23.2560.1417/0.23.1680.947@0.23.1680.947" timestamp="1598946041230" />
+    <state x="526" y="230" width="670" height="676" key="search.everywhere.popup/-2560.23.2560.1417/0.23.1680.947@0.23.1680.947" timestamp="1598951382693" />
     <state x="526" y="230" width="670" height="750" key="search.everywhere.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1596304924769" />
     <state x="526" y="230" width="670" height="676" key="search.everywhere.popup/0.23.1680.947@0.23.1680.947" timestamp="1598287303306" />
   </component>
