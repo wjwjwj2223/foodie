@@ -90,18 +90,6 @@ public class PassportController extends BaseController {
         return IMOOCJSONResult.ok();
     }
 
-    private UsersVO convertUsersVO(User user) {
-        //实现用户的redis会话
-        String uniqueToken = UUID.randomUUID().toString().trim();
-        redisOperator.set(REDIS_USER_TOKEN + ":" + user.getId(), uniqueToken);
-
-        UsersVO usersVO = new UsersVO();
-        BeanUtils.copyProperties(user, usersVO);
-        usersVO.setUserUniqueToken(uniqueToken);
-        return usersVO;
-    }
-
-
     @ApiOperation(value = "用户登录", notes = "用户登录", httpMethod = "POST")
     @PostMapping("/login")
     public IMOOCJSONResult login(@RequestBody UserBO userBO, HttpServletRequest request, HttpServletResponse response) throws Exception {
@@ -136,7 +124,7 @@ public class PassportController extends BaseController {
 
         //用户退出登录 清楚redis 中user的会话信息
         redisOperator.del(REDIS_USER_TOKEN + ":" + userId);
-        
+
         // 用户退出登陆需要清空购物车
         CookieUtils.deleteCookie(request, response, FOODIE_SHOPCART);
         return IMOOCJSONResult.ok();

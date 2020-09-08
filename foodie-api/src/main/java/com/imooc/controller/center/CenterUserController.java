@@ -3,6 +3,7 @@ package com.imooc.controller.center;
 import com.imooc.controller.BaseController;
 import com.imooc.pojo.User;
 import com.imooc.pojo.bo.center.CenterUserBO;
+import com.imooc.pojo.vo.UsersVO;
 import com.imooc.resource.FileUpload;
 import com.imooc.service.center.CenterUserService;
 import com.imooc.utils.CookieUtils;
@@ -128,11 +129,13 @@ public class CenterUserController extends BaseController {
         // 更新用户头像到数据库
         User userResult = centerUserService.updateUserFace(userId, finalUserFaceUrl);
 
-        userResult = setNullProperty(userResult);
-        CookieUtils.setCookie(request, response, "user",
-                JsonUtils.objectToJson(userResult), true);
+//        userResult = setNullProperty(userResult);
 
-        // TODO 后续要改，增加令牌token，会整合进redis，分布式会话
+        //增加令牌token，会整合进redis，分布式会话
+        UsersVO usersVO = convertUsersVO(userResult);
+
+        CookieUtils.setCookie(request, response, "user",
+                JsonUtils.objectToJson(usersVO), true);
 
         return IMOOCJSONResult.ok();
     }
