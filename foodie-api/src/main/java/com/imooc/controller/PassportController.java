@@ -80,20 +80,25 @@ public class PassportController extends BaseController {
         userResult = setNullProperty(userResult);
 
         //实现用户的redis会话
-        String uniqueToken = UUID.randomUUID().toString().trim();
-        redisOperator.set(REDIS_USER_TOKEN + ":" + userResult.getId(), uniqueToken);
-
-        UsersVO usersVO = new UsersVO();
-        BeanUtils.copyProperties(userResult, usersVO);
-        usersVO.setUserUniqueToken(uniqueToken);
+        UsersVO usersVO = convertUsersVO(userResult);
 
         CookieUtils.setCookie(request, response, "user",
                 JsonUtils.objectToJson(usersVO), true);
 
-        // TODO 生成用户token，存入redis会话
-        // TODO 同步购物车数据
+        // 同步购物车数据
         synchShopcartData(userResult.getId(), request, response);
         return IMOOCJSONResult.ok();
+    }
+
+    private UsersVO convertUsersVO(User user) {
+        //实现用户的redis会话
+        String uniqueToken = UUID.randomUUID().toString().trim();
+        redisOperator.set(REDIS_USER_TOKEN + ":" + user.getId(), uniqueToken);
+
+        UsersVO usersVO = new UsersVO();
+        BeanUtils.copyProperties(user, usersVO);
+        usersVO.setUserUniqueToken(uniqueToken);
+        return usersVO;
     }
 
 
