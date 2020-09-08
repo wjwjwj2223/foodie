@@ -64,4 +64,15 @@ public class RedisController {
         return redisOperator.mget(keysList);
     }
 
+    /**
+     * 批量查询 pipeline
+     * @param keys
+     * @return
+     */
+    @GetMapping("/batchGet")
+    public Object batchGet(String... keys) {
+        List<String> keysList = Arrays.asList(keys);
+        return redisOperator.batchGet(keysList);
+    }
+
 }
