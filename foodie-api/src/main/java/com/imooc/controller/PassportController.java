@@ -133,8 +133,12 @@ public class PassportController extends BaseController {
 
         //清除相关cookie
         CookieUtils.deleteCookie(request, response, "user");
-        // TODO 用户退出登陆需要清空购物车
-        // TODO 分布式会话中需要清空用户数据
+
+        //用户退出登录 清楚redis 中user的会话信息
+        redisOperator.del(REDIS_USER_TOKEN + ":" + userId);
+        
+        // 用户退出登陆需要清空购物车
+        CookieUtils.deleteCookie(request, response, FOODIE_SHOPCART);
         return IMOOCJSONResult.ok();
     }
 
