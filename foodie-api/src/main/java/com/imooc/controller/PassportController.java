@@ -102,12 +102,13 @@ public class PassportController extends BaseController {
             return IMOOCJSONResult.errorMsg("用户名或者密码不能为空");
         }
         //1 实现登录
-        User user = userService.queryUserForLogin(username, MD5Utils.getMD5Str(password));
-        if (user == null) {
+        User userResult = userService.queryUserForLogin(username, MD5Utils.getMD5Str(password));
+        if (userResult == null) {
             return IMOOCJSONResult.errorMsg("用户名或者密码不正确");
         }
-        User userResult = setNullProperty(user);
-        CookieUtils.setCookie(request, response,"user", JsonUtils.objectToJson(userResult), true);
+//        User userResult = setNullProperty(user);
+        UsersVO usersVO = convertUsersVO(userResult);
+        CookieUtils.setCookie(request, response,"user", JsonUtils.objectToJson(usersVO), true);
 
         // TODO 生成用户token，存入redis会话
         // TODO 同步购物车数据
