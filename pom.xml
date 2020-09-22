@@ -98,6 +98,18 @@
             <version>1.2.12</version>
         </dependency>
 
+
+        <!-- 引入springsession 框架  -->
+        <dependency>
+            <groupId>org.springframework.session</groupId>
+            <artifactId>spring-session-data-redis</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-security</artifactId>
+        </dependency>
+
         <!--   引入redis  依赖   -->
         <dependency>
             <groupId>org.springframework.boot</groupId>

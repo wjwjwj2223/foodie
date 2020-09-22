@@ -41,7 +41,7 @@ public class BaseController {
     public MyOrdersService myOrdersService;
 
     @Autowired
-    private RedisOperator redisOperator;
+    protected RedisOperator redisOperator;
 
     /**
      * 用于验证用户和订单是否有关联关系，避免非法用户调用

@@ -24,6 +24,7 @@ com/imooc/pojo/vo/MyOrdersVO.class
 com/imooc/pojo/bo/SubmitOrderBO.class
 com/imooc/pojo/vo/MyCommentVO.class
 com/imooc/pojo/bo/ShopcartBO.class
+com/imooc/pojo/vo/UsersVO.class
 com/imooc/pojo/Carousel.class
 com/imooc/pojo/vo/OrderStatusCountsVO.class
 com/imooc/pojo/vo/NewItemsVO.class
