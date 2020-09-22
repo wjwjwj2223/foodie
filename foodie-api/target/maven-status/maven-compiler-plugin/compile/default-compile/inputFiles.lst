@@ -9,6 +9,7 @@
 /Users/wangjie/Desktop/Study/Java/imooc/foodie/foodie-api/src/main/java/com/imooc/controller/StuFooController.java
 /Users/wangjie/Desktop/Study/Java/imooc/foodie/foodie-api/src/main/java/com/imooc/config/WebMvcConfig.java
 /Users/wangjie/Desktop/Study/Java/imooc/foodie/foodie-api/src/main/java/com/imooc/controller/center/MyCommentsController.java
+/Users/wangjie/Desktop/Study/Java/imooc/foodie/foodie-api/src/main/java/com/imooc/controller/interceptor/UserTokenInterceptor.java
 /Users/wangjie/Desktop/Study/Java/imooc/foodie/foodie-api/src/main/java/com/imooc/exception/CustomExceptionHandler.java
 /Users/wangjie/Desktop/Study/Java/imooc/foodie/foodie-api/src/main/java/com/imooc/controller/center/CenterUserController.java
 /Users/wangjie/Desktop/Study/Java/imooc/foodie/foodie-api/src/main/java/com/imooc/controller/RedisController.java
