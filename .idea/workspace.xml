@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a14b7fe4-6c89-4cec-8694-9102118dff6d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/foodie-sso/src/main/java/com/imooc/CorsConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/foodie-api/src/main/java/com/imooc/controller/PassportController.java" beforeDir="false" afterPath="$PROJECT_DIR$/foodie-api/src/main/java/com/imooc/controller/PassportController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foodie-api/src/main/java/com/imooc/controller/BaseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/foodie-api/src/main/java/com/imooc/controller/BaseController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foodie-common/src/main/java/com/imooc/utils/IMOOCJSONResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/foodie-common/src/main/java/com/imooc/utils/IMOOCJSONResult.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/foodie-sso/src/main/java/com/imooc/controller/SSOController.java" beforeDir="false" afterPath="$PROJECT_DIR$/foodie-sso/src/main/java/com/imooc/controller/SSOController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -71,8 +73,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.imooc.controller" />
       <recent name="com.imooc" />
+      <recent name="com.imooc.controller" />
       <recent name="com.imooc.utils" />
       <recent name="com.imooc.controller.center" />
       <recent name="com.imooc.pojo.vo" />
@@ -179,7 +181,7 @@
       <workItem from="1598534903460" duration="8000" />
       <workItem from="1598945432665" duration="10018000" />
       <workItem from="1599579507360" duration="3997000" />
-      <workItem from="1600746770600" duration="12626000" />
+      <workItem from="1600746770600" duration="22498000" />
     </task>
     <servers />
   </component>
@@ -325,11 +327,11 @@
     </state>
     <state x="195" y="159" key="new project wizard/-2560.23.2560.1417/0.23.1680.947@0.23.1680.947" timestamp="1600772245531" />
     <state x="195" y="159" key="new project wizard/0.23.1680.947@0.23.1680.947" timestamp="1595948629197" />
-    <state x="526" y="230" width="670" height="676" key="search.everywhere.popup" timestamp="1600777893498">
+    <state x="526" y="230" width="670" height="676" key="search.everywhere.popup" timestamp="1600784606190">
       <screen x="0" y="23" width="1680" height="947" />
     </state>
     <state x="526" y="230" width="670" height="676" key="search.everywhere.popup/-2560.23.2560.1417/0.23.1680.947@0.23.1680.947" timestamp="1600777893498" />
     <state x="526" y="230" width="670" height="750" key="search.everywhere.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1596304924769" />
-    <state x="526" y="230" width="670" height="676" key="search.everywhere.popup/0.23.1680.947@0.23.1680.947" timestamp="1599591776037" />
+    <state x="526" y="230" width="670" height="676" key="search.everywhere.popup/0.23.1680.947@0.23.1680.947" timestamp="1600784606190" />
   </component>
 </project>
