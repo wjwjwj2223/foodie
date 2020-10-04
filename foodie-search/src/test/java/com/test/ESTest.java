@@ -4,15 +4,21 @@ import com.imooc.Application;
 import com.imooc.es.pojo.Stu;
 import org.assertj.core.data.Index;
 import org.elasticsearch.action.index.IndexRequest;
+import org.elasticsearch.index.query.QueryBuilder;
+import org.elasticsearch.index.query.QueryBuilders;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
 import org.springframework.data.elasticsearch.core.ElasticsearchTemplate;
+import org.springframework.data.elasticsearch.core.aggregation.AggregatedPage;
 import org.springframework.data.elasticsearch.core.query.*;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 @RunWith(SpringRunner.class)
@@ -78,5 +84,26 @@ public class ESTest {
     public void deleteStuDoc() {
         elasticsearchTemplate.delete(Stu.class, "1002");
     }
+
+    //------------------------------
+
+    @Test
+    public void searchStuDoc() {
+        Pageable pageable = PageRequest.of(0,2);
+        SearchQuery searchQuery = new NativeSearchQueryBuilder()
+                .withQuery(QueryBuilders
+                        .matchQuery("description", "sa"))
+                .withPageable(pageable)
+                .build();
+
+        AggregatedPage<Stu> stus = elasticsearchTemplate
+                .queryForPage(searchQuery, Stu.class);
+        System.out.println("检索后的总分页数:" + stus.getTotalPages());
+        List<Stu> stuList = stus.getContent();
+        for (Stu s : stuList) {
+            System.out.println(s.toString());
+        }
+    }
+
 
 }
