@@ -66,10 +66,17 @@ public class ESTest {
 
     //文档数据的查询
     @Test
-    public void getIndexStu() {
+    public void getStuDoc() {
         GetQuery getQuery = new GetQuery();
         getQuery.setId("1002");
         Stu stu = elasticsearchTemplate.queryForObject(getQuery, Stu.class);
         System.out.println(stu.toString());
     }
+
+    // 删除文档数据
+    @Test
+    public void deleteStuDoc() {
+        elasticsearchTemplate.delete(Stu.class, "1002");
+    }
+
 }

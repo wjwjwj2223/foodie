@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="a14b7fe4-6c89-4cec-8694-9102118dff6d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/foodie-search/src/main/java/com/imooc/es/pojo/Stu.java" beforeDir="false" afterPath="$PROJECT_DIR$/foodie-search/src/main/java/com/imooc/es/pojo/Stu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/foodie-search/src/test/java/com/test/ESTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/foodie-search/src/test/java/com/test/ESTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -223,7 +222,7 @@
       <workItem from="1598945432665" duration="10018000" />
       <workItem from="1599579507360" duration="3997000" />
       <workItem from="1600746770600" duration="23545000" />
-      <workItem from="1601562662150" duration="8255000" />
+      <workItem from="1601562662150" duration="8580000" />
     </task>
     <servers />
   </component>
