@@ -62,4 +62,15 @@ public class Stu {
     public void setSign(String sign) {
         this.sign = sign;
     }
+
+    @Override
+    public String toString() {
+        return "Stu{" +
+                "stuId=" + stuId +
+                ", name='" + name + '\'' +
+                ", age=" + age +
+                ", description='" + description + '\'' +
+                ", sign='" + sign + '\'' +
+                '}';
+    }
 }
