@@ -9,7 +9,7 @@ import org.springframework.data.elasticsearch.annotations.FieldType;
 public class Stu {
 
     @Id
-    private Long stuId;
+    private Integer stuId;
 
     @Field(store = true)
     private String name;
@@ -23,11 +23,11 @@ public class Stu {
     @Field(store = true, type = FieldType.Keyword)
     private String sign;
 
-    public Long getStuId() {
+    public Integer getStuId() {
         return stuId;
     }
 
-    public void setStuId(Long stuId) {
+    public void setStuId(Integer stuId) {
         this.stuId = stuId;
     }
 

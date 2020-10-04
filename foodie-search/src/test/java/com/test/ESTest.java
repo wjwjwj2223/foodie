@@ -4,22 +4,33 @@ import com.imooc.Application;
 import com.imooc.es.pojo.Stu;
 import org.assertj.core.data.Index;
 import org.elasticsearch.action.index.IndexRequest;
+import org.elasticsearch.action.search.SearchResponse;
 import org.elasticsearch.index.query.QueryBuilder;
 import org.elasticsearch.index.query.QueryBuilders;
+import org.elasticsearch.search.SearchHit;
+import org.elasticsearch.search.SearchHits;
+import org.elasticsearch.search.aggregations.Aggregation;
+import org.elasticsearch.search.aggregations.Aggregations;
+import org.elasticsearch.search.fetch.subphase.highlight.HighlightBuilder;
+import org.elasticsearch.search.fetch.subphase.highlight.HighlightField;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
 import org.springframework.data.elasticsearch.core.ElasticsearchTemplate;
+import org.springframework.data.elasticsearch.core.SearchResultMapper;
 import org.springframework.data.elasticsearch.core.aggregation.AggregatedPage;
+import org.springframework.data.elasticsearch.core.aggregation.impl.AggregatedPageImpl;
+import org.springframework.data.elasticsearch.core.facet.FacetResult;
 import org.springframework.data.elasticsearch.core.query.*;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
+import java.util.function.Function;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest(classes = Application.class)
@@ -38,7 +49,7 @@ public class ESTest {
     @Test
     public void createIndexStu() {
         Stu stu = new Stu();
-        stu.setStuId(1002L);
+        stu.setStuId(1002);
         stu.setName("spider name");
         stu.setAge(19);
         stu.setDescription("spider");
@@ -105,5 +116,57 @@ public class ESTest {
         }
     }
 
+    //高亮搜索
+    @Test
+    public void highlightSearchStuDoc() {
+        String pretag = "<font color='red'>";
+        String postTag = "</font>";
+        Pageable pageable = PageRequest.of(0,2);
+        SearchQuery searchQuery = new NativeSearchQueryBuilder()
+                .withQuery(QueryBuilders
+                        .matchQuery("description", "spider"))
+                .withHighlightFields(new HighlightBuilder
+                        .Field("description")
+                        .preTags(pretag)
+                        .postTags(postTag))
+                .withPageable(pageable)
+                .build();
+
+        AggregatedPage<Stu> stus = elasticsearchTemplate
+                .queryForPage(searchQuery, Stu.class,
+                        new SearchResultMapper() {
+                    @Override
+                    public <T> AggregatedPage<T> mapResults(
+                            SearchResponse searchResponse,
+                            Class<T> aClass, Pageable pageable) {
+                        List<Stu> stuList = new ArrayList<>();
+                        SearchHits hits = searchResponse.getHits();
+                        for (SearchHit hit : hits) {
+                            Integer stuId = (Integer) hit.getSourceAsMap().get("stuId");
+                            String name = (String) hit.getSourceAsMap().get("name");
+                            Integer age = Integer.valueOf((String) hit.getSourceAsMap().get("age"));
+                            String sign = (String) hit.getSourceAsMap().get("sign");
+                            HighlightField field = hit.getHighlightFields().get("description");
+                            String description = field.getFragments()[0].toString();
+                            Stu highStudent = new Stu();
+                            highStudent.setDescription(description);
+                            highStudent.setStuId(stuId);
+                            highStudent.setName(name);
+                            highStudent.setAge(age);
+                            highStudent.setSign(sign);
+                            stuList.add(highStudent);
+                        }
+                        if (stuList.size() > 0) {
+                            return new AggregatedPageImpl<>((List<T>) stuList);
+                        }
+                        return null;
+                    }
+                });
+        System.out.println("检索后的总分页数:" + stus.getTotalPages());
+        List<Stu> stuList = stus.getContent();
+        for (Stu s : stuList) {
+            System.out.println(s.toString());
+        }
+    }
 
 }
