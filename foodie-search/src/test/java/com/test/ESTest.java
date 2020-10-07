@@ -13,6 +13,9 @@ import org.elasticsearch.search.aggregations.Aggregation;
 import org.elasticsearch.search.aggregations.Aggregations;
 import org.elasticsearch.search.fetch.subphase.highlight.HighlightBuilder;
 import org.elasticsearch.search.fetch.subphase.highlight.HighlightField;
+import org.elasticsearch.search.sort.FieldSortBuilder;
+import org.elasticsearch.search.sort.SortBuilder;
+import org.elasticsearch.search.sort.SortOrder;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -122,6 +125,10 @@ public class ESTest {
         String pretag = "<font color='red'>";
         String postTag = "</font>";
         Pageable pageable = PageRequest.of(0,2);
+        SortBuilder ageBuilder = new FieldSortBuilder("age")
+                .order(SortOrder.ASC);
+        SortBuilder stuIdBuilder = new FieldSortBuilder("stuId")
+                .order(SortOrder.DESC);
         SearchQuery searchQuery = new NativeSearchQueryBuilder()
                 .withQuery(QueryBuilders
                         .matchQuery("description", "spider"))
@@ -129,6 +136,8 @@ public class ESTest {
                         .Field("description")
                         .preTags(pretag)
                         .postTags(postTag))
+                .withSort(ageBuilder)
+                .withSort(stuIdBuilder)
                 .withPageable(pageable)
                 .build();
 

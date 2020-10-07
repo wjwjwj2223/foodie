@@ -1,3 +1,5 @@
+
+
 spring:
   datasource:                                           # 数据源的相关配置
     type: com.zaxxer.hikari.HikariDataSource          # 数据源类型：HikariCP
@@ -9,3 +11,5 @@ spring:
     elasticsearch:
       cluster-name: imooc-elasticsearch
       cluster-nodes: 172.16.164.155:9300
+server:
+  port: 8033

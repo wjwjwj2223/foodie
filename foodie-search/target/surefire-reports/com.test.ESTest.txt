@@ -1,0 +1,15 @@
+-------------------------------------------------------------------------------
+Test set: com.test.ESTest
+-------------------------------------------------------------------------------
+Tests run: 7, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 9.11 s <<< FAILURE! - in com.test.ESTest
+updateStuDoc(com.test.ESTest)  Time elapsed: 0.522 s  <<< ERROR!
+org.elasticsearch.index.engine.DocumentMissingException: [_doc][1002]: document missing
+
+getStuDoc(com.test.ESTest)  Time elapsed: 0.018 s  <<< ERROR!
+java.lang.NullPointerException
+	at com.test.ESTest.getStuDoc(ESTest.java:93)
+
+highlightSearchStuDoc(com.test.ESTest)  Time elapsed: 0.147 s  <<< ERROR!
+java.lang.NullPointerException
+	at com.test.ESTest.highlightSearchStuDoc(ESTest.java:174)
+
