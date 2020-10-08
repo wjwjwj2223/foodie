@@ -13,12 +13,14 @@
         <module name="foodie-sso" />
         <module name="foodie-common" />
         <module name="foodie-api" />
+        <module name="foodie-fs" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="foodie" target="1.8" />
       <module name="foodie-api" target="1.8" />
       <module name="foodie-common" target="1.8" />
+      <module name="foodie-fs" target="1.8" />
       <module name="foodie-mapper" target="1.8" />
       <module name="foodie-pojo" target="1.8" />
       <module name="foodie-search" target="1.8" />
@@ -30,6 +32,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="foodie-api" options="-parameters" />
       <module name="foodie-common" options="-parameters" />
+      <module name="foodie-fs" options="-parameters" />
       <module name="foodie-mapper" options="-parameters" />
       <module name="foodie-pojo" options="-parameters" />
       <module name="foodie-search" options="-parameters" />
