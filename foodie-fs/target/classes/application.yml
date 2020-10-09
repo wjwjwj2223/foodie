@@ -64,3 +64,15 @@ mapper:
 pagehelper:
   helperDialect: mysql
   supportMethodsArguments: true
+
+############################################################
+#
+# fdfs 配置
+#
+############################################################
+fdfs:
+  connect-timeout: 30 # 连接的超时时间
+  so-timeout: 30 # 读取的超时时间
+  tracker-list: 192.168.1.1:22122 # track 服务所在的ip端口
+
+

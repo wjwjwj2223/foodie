@@ -63,13 +63,17 @@ public class CenterUserController extends BaseController {
                         !suffix.equalsIgnoreCase("jpeg") ) {
                     return IMOOCJSONResult.errorMsg("图片格式不正确！");
                 }
-                path = fdfsService.upload(file, suffix);
+                //fastdfs 实现
+//                path = fdfsService.upload(file, suffix);
+                //oss实现
+                path = fdfsService.uploadOSS(file, userId, suffix);
             }
         } else {
             return IMOOCJSONResult.errorMsg("文件不能为空！");
         }
         if (StringUtils.isNoneBlank(path)) {
-            String finalUserFaceUrl = fileResource.getHost() + path;
+//            String finalUserFaceUrl = fileResource.getHost() + path;
+            String finalUserFaceUrl = fileResource.getOssHost() + path;
             // 更新用户头像到数据库
             User userResult = centerUserService.updateUserFace(userId, finalUserFaceUrl);
             //增加令牌token，会整合进redis，分布式会话
